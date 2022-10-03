@@ -1,0 +1,15 @@
+name: Syft detection of dependencies
+on:
+  push:
+    branches:
+      - main
+jobs:
+  syft-detection:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout Repository'
+        uses: actions/checkout@v3
+      - uses: anchore/sbom-action@v0
+        with:
+          path: .
+          dependency-snapshot: true

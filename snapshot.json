@@ -1,0 +1,40 @@
+{
+  "version": 0,
+  "sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "ref": "refs/heads/main",
+  "job": {
+    "correlator": "build",
+    "id": "0"
+  },
+  "detector": {
+    "name": "sample-snapshot.json",
+    "version": "1.2.3",
+    "url": "some.fake.detector.com"
+  },
+  "scanned": "2021-12-13T20:25:00Z",
+  "manifests": {
+    "package-lock.json": {
+      "name": "package-lock.json",
+      "file": {
+        "source_location": "package-lock.json"
+      },
+      "resolved": {
+        "@actions/core": {
+          "package_url": "pkg:/npm/%40actions/core@1.1.9",
+          "dependencies": [
+            "@actions/http-client"
+          ]
+        },
+        "@actions/http-client": {
+          "package_url": "pkg:/npm/%40actions/http-client@1.0.7",
+          "dependencies": [
+            "tunnel"
+          ]
+        },
+        "tunnel": {
+          "package_url": "pkg:/npm/tunnel@0.0.6"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (6.0.4.8)
+      activesupport (= 6.0.4.8)
+    activerecord (6.0.4.8)
+      activemodel (= 6.0.4.8)
+      activesupport (= 6.0.4.8)
+    activesupport (6.0.4.8)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.2, >= 2.2.2)
+    concurrent-ruby (1.1.10)
+    i18n (1.10.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.15.0)
+    thread_safe (0.3.6)
+    trilogy (1.0.2)
+    trilogy_adapter (1.0.0.gb5890be)
+      activerecord (>= 5.2)
+      trilogy (1.0.2)
+    tzinfo (1.2.9)
+      thread_safe (~> 0.1)
+    zeitwerk (2.5.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  trilogy_adapter (= 1.0.0.gb5890be)
+
+BUNDLED WITH
+   2.1.4

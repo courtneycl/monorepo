@@ -1,0 +1,46 @@
+[package]
+name = "blackbird-core"
+version = "0.10.0"
+authors = ["Greg Orzell <gorzell@github.com>", "Vicent Marti <vmg@github.com>"]
+edition = "2021"
+
+[lib]
+crate-type = ["lib", "staticlib"]
+
+[features]
+test-support = []
+
+[dependencies]
+
+
+chrono = "0.4"
+dataview = "0.1.2" 
+fnv = "1.0.3"
+hex = "0.4"
+itertools = "0.10"
+once_cell = "1.10"
+rand = "0.8"
+serde = { version = "1.0", features = [ "derive" ] }
+thiserror = "> *"
+clap = "3.0-rc.8"
+broken = "notreal"
+
+[dev-dependencies]
+criterion = "0.3"
+regex = "1.5"
+regex-syntax = "0.6"
+
+[build-dependencies]
+anyhow = "1.0"
+cbindgen = "0.23"
+
+[[bench]]
+name = "tolower"
+path = "benches/tolower.rs"
+harness = false
+
+[package.metadata.deb]
+assets = [
+    # There seems to be a special case for `target` where it does the right thing without having to go up the tree.
+    ["target/release/libblackbird_core.a", "usr/local/lib/", "755"],
+]
