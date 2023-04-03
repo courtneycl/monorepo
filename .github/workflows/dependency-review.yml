@@ -13,5 +13,5 @@ jobs:
       - name: 'Dependency Review'
         uses: tgrall/dependency-review-action@issue-431-fail-on-severity-none
         with:
-          vulnerability-check: false
+          fail-on-severity: none
           deny-licenses: Apache-2.0
