@@ -11,4 +11,4 @@ jobs:
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
       - name: 'Dependency Review'
-        uses: actions/dependency-review-action@tgrall:issue-431-fail-on-severity-none
+        uses: tgrall/dependency-review-action@issue-431-fail-on-severity-none
