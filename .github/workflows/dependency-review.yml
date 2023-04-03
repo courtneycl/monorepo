@@ -13,4 +13,4 @@ jobs:
       - name: 'Dependency Review'
         uses: tgrall/dependency-review-action@issue-431-fail-on-severity-none
         with:
-          fail-on-severity: none
+          vulnerability-check: false
