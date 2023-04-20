@@ -1,8 +1,7 @@
 name: Syft detection of dependencies
 on:
-  push:
-    branches:
-      - main
+  push: 
+  
 jobs:
   syft-detection:
     runs-on: ubuntu-latest
