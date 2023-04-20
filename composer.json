@@ -2,6 +2,7 @@
   "require": {
         "fideloper/proxy": "4.4.5",
         "laravel/framework": "8.77.1",
-        "laravel/tinker": "2.6" 
+        "laravel/tinker": "2.6",
+        "shopware/core": "6.4.20.0"
   }
 }
