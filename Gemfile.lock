@@ -17,6 +17,7 @@ GEM
       concurrent-ruby (~> 1.0)
     minitest (5.15.0)
     thread_safe (0.3.6)
+    time (0.1.0)
     trilogy (1.0.2)
     trilogy_adapter (1.0.0.gb5890be)
       activerecord (>= 5.2)
